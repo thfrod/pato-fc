@@ -11,7 +11,13 @@ class SplashPage extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: colors.primary,
-      body: Center(child: LottieBuilder.asset(animationPath)),
+      body: Center(
+        child: LottieBuilder.asset(
+          animationPath,
+          repeat: true,
+          width: MediaQuery.sizeOf(context).width * 0.75,
+        ),
+      ),
     );
   }
 }
