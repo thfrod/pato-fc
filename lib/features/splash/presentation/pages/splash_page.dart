@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:lottie/lottie.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -7,21 +7,11 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
-    final logoPath = 'assets/images/logo.svg';
+    final animationPath = 'assets/animations/logo-animation.json';
 
     return Scaffold(
       backgroundColor: colors.primary,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SvgPicture.asset(
-              logoPath,
-              width: MediaQuery.sizeOf(context).width * 0.5,
-            ),
-          ],
-        ),
-      ),
+      body: Center(child: LottieBuilder.asset(animationPath)),
     );
   }
 }
