@@ -3,7 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:patofc/@shared/design_system/theme.dart';
 import 'package:patofc/@shared/l10n/app_localizations.dart';
 import 'package:patofc/@shared/l10n/l10n.dart';
-import 'package:patofc/features/home/presentation/pages/home_page.dart';
+import 'package:patofc/features/splash/presentation/pages/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      home: const HomePage(),
+      home: const SplashPage(),
     );
   }
 }
