@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:patofc/@shared/design_system/theme.dart';
 import 'package:patofc/@shared/l10n/app_localizations.dart';
 import 'package:patofc/@shared/l10n/l10n.dart';
+import 'package:patofc/@shared/theme/theme.dart';
 import 'package:patofc/features/splash/presentation/pages/splash_page.dart';
 
 void main() {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:patofc/@shared/design_system/tokens/colors.dart';
+import 'package:patofc/@shared/theme/tokens/colors.dart';
 
 abstract class AppTheme {
   static ThemeData get dark {
